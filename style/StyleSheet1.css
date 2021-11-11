@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --bs-fonts: 'Helvetica Neue';
     --bs-blue: #49b26e;
     --bs-greyultra: #f9f9f9;
@@ -623,10 +623,39 @@ input[type="checkbox"] {
     .diable2 {
         display: none;
     }
+    .center{
+        margin:0 auto;
+        padding-left:20px;
+    }
+    .block_katalog{
+        margin-bottom:20px;
+    }
+    .block_retronslator {
+        margin-bottom: 20px;
+    }
+    .homecol {
+        margin-bottom: 20px;
+    }
+    a.rollover {
+        margin-top: 50px;
+        background: url(https://im0-tub-ru.yandex.net/i?id=51692ff26739869afe27d6664c32426a-l&ref=rim&n=13&w=720&h=405); /* Путь к файлу с исходным рисунком  */
+        display: block;
+        height: 150px;
+        width: 250px;
+        background-size: 100%;
+        transition: 1s;
+        margin: 0 auto;
+    }
 
+        a.rollover:hover {
+            background: url(https://www.bezpeka-shop.com/upload/articles/ajax-os-malevich/ajax-exchange.gif); /* Путь к файлу с заменяемым рисунком  */
+            width: 100%;
+            background-size: 100%;
+            height: 300px;
+        }
     header {
         height: 100%;
-        background-size:100%;
+        background-size: 300%;
     }
 
     #product {
@@ -653,7 +682,7 @@ input[type="checkbox"] {
        
         padding:0;
     }
-    .row{
-      
+    .block_retronslator {
+        padding: 10px 30px;
     }
 }
