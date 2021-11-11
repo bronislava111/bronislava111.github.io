@@ -586,7 +586,7 @@ input[type="checkbox"] {
       height: 64px;
       margin-top: -32px;
       margin-left: -32px;
-      background: url('/examples/images/preloader.gif') no-repeat 50% 50%;
+      background: url('https://cdnb.artstation.com/p/assets/images/images/011/722/225/original/bartosz-aziewicz-loader-aziewicz-bartosz-3-gp.gif?1531073801') no-repeat 50% 50%;
       /*расположение (url) изображения gif и др. параметры*/
     }
 
