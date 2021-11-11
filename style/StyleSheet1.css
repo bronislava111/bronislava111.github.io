@@ -132,7 +132,7 @@ nav {
         }
 
 header {
-     background-image: url(https://i.yapx.ru/PEKDi.gif);
+     background-image: url("https://i.yapx.ru/PEKDi.gif");
     background-size: 100%;
     height: 100%;
     font-family: 'Helvetica Neue';
