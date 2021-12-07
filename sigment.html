@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <!-- Torus Kit `.css` file -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Torus Kit `.js` file -->
+  <script src="./assets/js/toruskit.min.js"></script>
+  
+
+  <title>Too Алматы Kyzet</title>
+
+</head>
+
+<body class="">
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Navigation -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="./">
+        Too Алматы Kyzet
+      </a>
+
+      <!-- Togglers -->
+      <div class="d-flex ms-auto order-lg-1">
+        <!-- Top navigation toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+
+        <!-- Offscreen navigation toggler -->
+        <button class="btn shadow-no position-relative center-both text-dark" id="off-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-tor="click:class.toggle(active, {target: body})">
+          <!-- <i class="bi bi-list h4 mb-0 z-index-1 center-both"></i> -->
+          <i class="bi bi-arrow-left-short position-absolute d-flex" data-tor="hover(#off-toggler):reveal(left) delay(100ms) quad"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-tor-group="path => hover(#off-toggler):scaleX.to(0) originX(0%) quad delay(/+100ms/);">
+            <path fill="currentColor" d="M2.5 4c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 8c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 12c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+          </svg>
+          <span class="circle circle-md position-absolute bg-opacity-10" data-tor="hover(#off-toggler):[bg(dark) scale.from(0)]"></span>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse small order-lg-0" id="topNavbar">
+        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark">
+          <li class="nav-item">
+              <a class="nav-link" href="tel: 8 (727) 328-95-96"> 8 (727) 328-95-96</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tel:8 (777) 632-40-35">8 (777) 632-40-35</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tel:+8 (777) 632-40-35">
+                  8 (777) 632-40-35
+
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Написать нам
+              <i class="bi bi-chat-dots-fill text-primary"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Offscreen backdrop -->
+  <div id="offscreen-backdrop" class="z-index-master w-h-100 fixed-top bg-black bg-opacity-50" data-tor="active(body):[fade.in @pointer-events(none;auto)] click:class.remove(active, {target: body})"></div>
+
+  <!-- Offscreen navigation -->
+  <nav id="offscreen-nav" class="overflow-auto position-fixed z-index-master end-0 bg-white shadow w-80 w-sm-auto p-5 pe-8 h-100" data-tor="active(body):pull.left(full)">
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-tor="click:class.remove(active, {target: body})" aria-label="Close"></button>
+    <ul class="nav flex-column links-dark nav-style-opacity nav-style-hover-primary" >
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.html#home">О нас</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.html#services">Стартовые комлекты</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.htmls#experienceone">Централи</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#skills">Ретрансляторы</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#experience">Управление</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="с">Охрана дома и улиц</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#block">Cирены</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#my-weapons">Против воды</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#block2">Против пожара</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#testimonials">Отзывы</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#work-process">Автоматизация</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#contact">Cвязаться с нами</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#stay-connected">Stay connected</a>
+        </li>
+
+    </ul>
+  </nav>
+
+  <main id="main-content ">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <!-- EXPERIENCE -->
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+      <section id="experienceone" class="py-5 py-lg-8 overflow-hidden bg-light">
+        <center class=" mt-5">
+          <span class=" d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5"><h4 class=" font-sans-serif">Безпроводные системы  безопасности</h4></span>   </center>
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Центральные</div>
+                    <!-- Title -->
+                    
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div id="div3" style="display:block"><img src="assets/img/block3/banerwhite.png"  width="100%" ></div>
+                              <div id="div4" style="display:none"><img src="assets/img/block3/bannertwo.png" width="100%" ></div>
+                               </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Hub 2 Plus</h5>
+                                <h4 class="font-sans-serif">
+                                    145000тг
+                                </h4>
+                                <small class="text-secondary">
+                                  имеется в двух цветах
+                                  <button onclick="replaceone(true);" class="text-secondary" style="border:none; padding: 0; background-color: #f9fafb;" >белый</button>
+                                  <button onclick="replaceone();" style="border:none; padding: 0; background-color: #f9fafb;">черный</buttons>
+                                </small>
+                            </div>
+                            <p class="small">
+                                Ethernet,
+                                LTE/3G/2G,
+                                Wi-Fi,
+                                Фотоверификация,
+                                Видеонаблюдение
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div id="div5" style="display:block"><img src="assets/img/block3/banerwhite.png"  width="100%" ></div>
+                              <div id="div6" style="display:none"><img src="assets/img/block3/bannertwo.png" width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Hub 2</h5>
+                                <h4 class="font-sans-serif">
+                                    86600тг
+                                </h4>
+                                <small class="text-secondary"> имеется в двух цветах <button onclick="replace(true);" class="text-secondary" style="border:none; padding: 0; background-color: #f9fafb;" >белый</button>
+                                  <button onclick="replace();" style="border:none; padding: 0; background-color: #f9fafb;">черный</buttons>
+                               </small>
+                            </div>
+                            <p class="small">
+                                Ethernet,
+                                2G,
+                                Фотоверификация,
+                                Видеонаблюдение,
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end .col -->
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">панели</div>
+                    <!-- Title -->
+             
+
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><div id="div7" style="display:block"><img src="assets/img/block3/bannertwo.png"  width="100%" ></div>
+                              <div id="div8" style="display:none"><img src="assets/img/block3/banerwhite.png" width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Hub Plus</h5>
+                                <h4 class="font-sans-serif">112700тг</h4>
+                                <small class="text-secondary"> имеется в двух цветах <button onclick="replacetwo(true);" class="text-secondary" style="border:none; padding: 0; background-color: #f9fafb;" >белый</button>
+                                  <button onclick="replacetwo();" style="border:none; padding: 0; background-color: #f9fafb;">черный</buttons>
+                               </small>
+                            </div>
+                            <p class="small">
+                                Ethernet,
+                                Wi-Fi,
+                                2G/3G,
+                                Видеонаблюдение
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><div id="div9" style="display:block"><img src="assets/img/block3/bannertwo.png"  width="100%" ></div>
+                              <div id="div10" style="display:none"><img src="assets/img/block3/banerwhite.png" width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Hub</h5>
+                                <h4 class="font-sans-serif">60000тг</h4>
+                                <small class="text-secondary"> имеется в двух цветах <button onclick="replacethree(true);" class="text-secondary" style="border:none; padding: 0; background-color: #f9fafb;" >черныйы</button>
+                                  <button onclick="replacethree();" style="border:none; padding: 0; background-color: #f9fafb;">белый</buttons>
+                               </small>
+                            </div>
+                            <p class="small">
+                                Ethernet,
+                                2G,
+                                Видеонаблюдение,
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end .col -->
+
+            </div>
+            <!-- end .row -->
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end #experience -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- SKILLS -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="skills" class="py-5 mt-3 py-lg-8">
+        <div class="container">
+            <!-- Badge -->
+            <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Ретросляторы</div>
+
+            <div class="row row-cols-1 row-cols-md-2 mt-md-5 center-v">
+                <!-- - - - - - - - -  -->
+                <!-- Description -->
+                <!-- - - - - - - - -  -->
+                <div class="col">
+                  <div class="right mt-3">
+                    <button onclick="replace_retronslator(true);" class="retronslator_btn font " >белый</button>
+                    <button onclick="replace_retronslator();" class="retronslator_btn font">черный</button>
+
+
+                </div>
+                    <div id="div11" style="display:block">
+                        <div class="ripple center">
+                            <center><img class="mt-3 w-300" src="https://avatars.mds.yandex.net/get-marketpic/1847713/market_qkXVebiRxSjziBApm1G0IQ/orig" width="50%"></center>
+                        </div>
+                    </div>
+
+                    <div id="div12" style="display:none">
+                      <div class="ripple center">
+                          <center><img class="mt-3 w-300" src="https://img.ktc.ua/img/base/1/9/312749.jpg" width="50%"></center>
+                      </div>
+                  </div>
+                    
+                    <center>
+                        <h3 class="font600 mt-5">ReX ( Разширение покрытия системы)</h3>
+                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Передает тревоги за 0,3 секунды</p></div>
+                        <div class="mt-3 font600"><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/internet-of-things.png" width="35" /></span>&emsp;Поддерживает связь на расстоянии до 1800 метров</p></div>
+                      
+                    </center>
+                    <div class="right">
+                        <a href="tel:+8 (777) 632-40-35" class="btn btn-primary btn-arrow py-2 px-3 mb-4" data-tor="hover:[bg(transparent) text(primary)]">43000тг</a>
+
+
+                    </div>
+
+                </div>
+                <!-- end .col -->
+                <!-- - - - - - - - -  -->
+                <!-- Illustration -->
+                <!-- - - - - - - - -  -->
+                <div class="col">
+                  <div class="right mt-3">
+                    <button onclick="replace_retronslator_two();" class="retronslator_btn font " >белый</button>
+                    <button onclick="replace_retronslator_two(true);" class="retronslator_btn font">черный</button>
+
+
+                </div>
+                    <div id="div13" style="display:block">
+                        <div class="ripple center">
+                            <center><img class="mt-3 w-300" src="https://img.ktc.ua/img/base/1/9/312749.jpg" width="50%"></center>
+                        </div>
+                    </div>
+
+                    <div id="div14" style="display:none">
+                      <div class="ripple center">
+                          <center><img class="mt-3 w-300" src=" https://avatars.mds.yandex.net/get-marketpic/1847713/market_qkXVebiRxSjziBApm1G0IQ/orig  " width="50%"></center>
+                      </div>
+                  </div>
+                    
+                    <center>
+                        <h3 class="font600 mt-5">ReX-2</h3>
+                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Передает тревоги за 0,3 секунды</p></div>
+                        <div class="mt-3 font600"><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/internet-of-things.png" width="35" /></span>&emsp;фото верификация</p></div>
+
+                    </center>
+                    <div class="right">
+                        <a href="tel:+8 (777) 632-40-35" class="btn btn-primary btn-arrow py-2 px-3 mb-4" data-tor="hover:[bg(transparent) text(primary)]">62600тг</a>
+
+
+                    </div>
+                   
+                </div>
+                <!-- end .col -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end #skills -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- EXPERIENCE -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="experience" class="py-5 py-lg-8 overflow-hidden bg-light">
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Управление</div>
+                    <!-- Title -->
+                 
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block4/navigate.png" width="100%" /></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">
+                                    SpaceControl
+                                </h5>
+                                <h4 class="font-sans-serif">8500тг</h4>
+                                <small class="text-secondary">South University Of Bangladesh</small>
+                            </div>
+                            <p class="small">Брелок с тревожной кнопкой</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block4/navigate2.png" width="100%" /></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Art Direction</h5>
+                                <h4 class="font-sans-serif">13440тг</h4>
+                                
+                            </div>
+                            <p class="small"> Беспроводная сенсорная клавиатура</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end .col -->
+                <!-- My education -->
+                <div class="col" >
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">тревожные кнопки</div>
+                    <!-- Title -->
+                
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block4/navigate3.png" width="100%" /></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-blue font-sans-serif">Button</h5>
+                                <h4 class="font-sans-serif">11900тг</h4>
+                               
+                            </div>
+                            <p class="small">
+                                
+                                Беспроводная тревожная кнопка для экстренных ситуаций
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block4/navigate4.png" width="100%" /></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-magenta font-sans-serif">
+                                    MotionProtect Curtain
+                                   
+                                </h5>
+                                <h4 class="font-sans-serif">27000тг</h4>
+                              
+                            </div>
+                            <p class="small"> Беспроводной датчик движения штор.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end .col -->
+
+            </div>
+            <!-- end .row -->
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end #experience -->
+
+
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- WORK PROCESS -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <section id="work-process" class="py-5 py-md-8 border-bottom">
+        <div class="container py-4">
+
+            <div class="w-md-50">
+                <!-- Badge -->
+                <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Оборудование</div>
+
+                <p class="mb-6">Безпроводные системы RAPTOR </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 " data-tor-group=".fx => inview:[pull.up(md) fade.in] delay(/+100ms/) slow;">
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                        
+                        <h3 class="font-sans-serif text-white mb-4">
+                            RAPTOR TR-RTR 220
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">14200тг</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-secondary rounded-xl p-6">
+                        
+                        <h3 class="font-sans-serif text-white mb-4">RAPTOR-4 RC  </h3>
+                        <p class="mb-4 text-body-light"> Беспроводной датчик движения</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            25200тг
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            RAPTOR MC-RCL 
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light"> Беспроводной датчик открытия </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            14200тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                      
+                        <h3 class="font-sans-serif text-white mb-4">
+                            RAPTOR REM-RC 
+                        </h3>
+                        <p class="mb-4 text-body-light">Радио брелок (постановка/снятие, ТС) </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            14200тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Стекло-3 РК </h3>
+                        <p class="mb-4 text-body-light">датчик разбития</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">14200тг</a>
+                    </div>
+
+                </div>
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                      
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Шорох-3 </h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+
+                            21100тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            ББП RAPTOR</h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx  bg-secondary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Сирена</h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Мини сейф </h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Тревожная Педаль FB-68 (черепаха)</h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Плата расширения</h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Антенна 433 </h3>
+                        <p class="mb-4 text-body-light">(для КП RAPTOR AIO, WRL)</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Антенна GSM </h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Антенна GSM BH016-1  </h3>
+                        <p class="mb-4 text-body-light"> Антивандальная</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Антенна GSM BH002   </h3>
+                        <p class="mb-4 text-body-light">Самоклеющая</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Антенна GSM AN0821F-2655BSM </h3>
+                        <p class="mb-4 text-body-light">Штыревая усиленная</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+    <div class="col mb-5">
+
+                    <div class="fx  bg-secondary rounded-xl p-6">
+                       
+                        <h3 class="font-sans-serif text-white mb-4">
+                       
+Удлинитель для антенн</h3>
+                        <p class="mb-4 text-body-light">Описание товара </p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div></section>
+        <!-- end .container -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- PORTFOLIO -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <section id="block" class="py-5 py-lg-8 ">
+      <div class="container py-4">
+          <!-- Title -->
+          <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Cирены</div>
+          <div class="row row-cols-1 row-cols-md-2 mt-md-5 center-v">
+              <!-- - - - - - - - -  -->
+              <!-- Description -->
+              <!-- - - - - - - - -  -->
+              <div class="col">
+                  <div id="div_retronslator" style="display:block">
+                      <div class="ripple center">
+                          <center><img class="mt-3 w-300" src="assets/img/block6/sirena.png" width="50%"></center>
+                      </div>
+                  </div>
+
+                  <center>
+                      <h3 class="font600 mt-5">HomeSiren </h3>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/siren.png" width="35" /></span>&emsp;Компактная домашняя сирена</div>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/plug-3.png" width="35" /></span>&emsp;С разъемом для внешнего светодиода</div>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/30/000000/medium-battery--v1.png" width="35" /></span>&emsp;Элемент питания: 2 батареи CR123A, 3 В</div>
+
+                   
+                  </center>
+                  <div class="right">
+                      <a href="tel:+8 (777) 632-40-35" class="btn btn-primary btn-arrow py-2 px-3 mb-4 mt-2" data-tor="hover:[bg(transparent) text(primary)]">21100тг</a>
+
+
+                  </div>
+
+              </div>
+              <!-- end .col -->
+              <!-- - - - - - - - -  -->
+              <!-- Illustration -->
+              <!-- - - - - - - - -  -->
+              <div class="col">
+                  <div id="div_retronslator" style="display:block">
+                      <div class="ripple center">
+                          <center><img class="mt-3 w-300" src="assets/img/block6/sirena2.png" width="50%"></center>
+                      </div>
+                  </div>
+
+                  <center>
+                      <h3 class="font600 mt-5">StreetSiren </h3>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/siren.png" width="35" /></span>&emsp;Защищенная уличная сирена</div>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/plug-3.png" width="35" /></span>&emsp;Световая индикация о состоянии охраны</div>
+                      <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/30/000000/medium-battery--v1.png" width="35" /></span>&emsp;Регулируемая громкость: 85 до 113 дБ</div>
+                  </center>
+                  <div class="right">
+                      <a href="tel:+8 (777) 632-40-35" class="btn btn-primary btn-arrow py-2 px-3 mb-4 mt-2" data-tor="hover:[bg(transparent) text(primary)]">44100тг</a>
+
+
+                  </div>
+
+              </div>
+              <!-- end .col -->
+
+          </div>
+      </div>
+  </section>
+  <!-- end #services -->
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <!-- EXPERIENCE -->
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+      <section id="block2" class="py-5 py-lg-8 overflow-hidden bg-light">
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Против</div>
+                    <!-- Title -->
+                
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block8/dim.png"  width="100%"/></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">FireProtects</h5>
+                               
+                               
+
+                                <h4 class="font-sans-serif">21100тг</h4>
+                                <small class="text-secondary">
+                                    Имеетя в двух цветах(черный)(белый)
+                                     </small>
+                            </div>
+                            <p class="small">
+                                <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/siren.png" width="15" /></span>&emsp;Датчик дыма с температурным сенсором </div>
+                                <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/48/000000/electrical.png" width="15" /></span>&emsp;Возможность работы как овтаномно так и в комлетах системы Ajax.</div>
+                            </p>
+                        </div>
+                    </div>
+
+               
+
+                </div>
+                <!-- end .col -->
+                <!-- My education -->
+                <div class="col" >
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">пожара</div>
+                    <!-- Title -->
+                 
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><img src="assets/img/block8/dim2.png" width="100%" /></small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">FireProtect Plus</h5>
+                                <h4 class="font-sans-serif">44100тг</h4>
+                                <small class="text-secondary">Имеется в двух цветах(белый)(черный)</small>
+                               
+                               
+
+                            </div>
+                            <p class="small">
+                                <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/siren.png" width="15" /></span>&emsp;Датчик дыма с температурным сенсором и сенсором угарного газа</div>
+                                <div class="mt-3 font600"><span сlass="border"><img src="https://img.icons8.com/ios/48/000000/electrical.png" width="15" /></span>&emsp;Возможность работы как овтаномно так и в комлетах системы Ajax.</div>
+                                   </p>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+                <!-- end .col -->
+
+            </div>
+            <!-- end .row -->
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end #experience -->
+   
+    <!-- end #my-weapons -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- WORK PROCESS -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <section id="work-process" class="py-5 py-md-8 border-bottom">
+        <div class="container py-4">
+
+            <div class="w-md-50">
+                <!-- Badge -->
+                <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Автоматизация</div>
+
+                <p class="mb-6">Умная розетка и реле позволяют автоматически и через приложение управлять электрозамками, воротами, бойлерами и любой другой техникой. Используйте сценарии, чтобы настроить работу устройств автоматизации по графику, при срабатывании датчиков или смене режима охраны.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 " data-tor-group=".fx => inview:[pull.up(md) fade.in] delay(/+100ms/) slow;">
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av2.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            WallSwitch
+
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light">Реле для дистанционного управления бытовыми приборами (черное) с контролем электричества.</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">14200тг</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-secondary rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av3.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">Socket </h3>
+                        <p class="mb-4 text-body-light">  Беспроводная умная розетка управляемая с приложения Ajax.</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            25200тг
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av4.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            uartBridge
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light"> Модуль интеграции с беспроводными охранными и smart home системами.</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            14200тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av2.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Relay
+                        </h3>
+                        <p class="mb-4 text-body-light"> Беспроводное Реле с сухими контактами 12V</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+                            14200тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av5.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Transmitter
+
+
+
+
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light">Беспроводной модуль для интеграции сторонних датчиков</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">14200тг</a>
+                    </div>
+
+                </div>
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-warning bg-darken rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av6.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            ocBridge Plus
+
+
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light">  Модуль интеграции с проводными и гибридными системами безопасности</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">
+
+                            21100тг
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col mb-5">
+
+                    <div class="fx bg-primary rounded-xl p-6">
+                        <img class=" mb-6" src="./assets/img/block9/av7.png" width="50%" alt="icon">
+                        <h3 class="font-sans-serif text-white mb-4">
+                            Hood for MotionProtect Outdoor
+                            
+
+                          
+
+
+
+
+
+
+                        </h3>
+                        <p class="mb-4 text-body-light">Козырек для датчика движения MotionProtect Outdoor, защищающий сенсоры маскирования от дождя и снега</p>
+                        <a href="#contact" class="btn btn-soft-light btn-arrow">  4800тг</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div></section>
+
+        <section id="experience" class="py-5 py-lg-8 overflow-hidden bg-light">
+            <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2">
+    
+                    <!-- My education -->
+                    <div class="col">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Охрана дома </div>
+                        <!-- Title -->
+                     
+    
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif">
+                                        DoorProtect
+                                    </h5>
+                                    <h4 class="font-sans-serif">10600тг</h4>
+                                    
+                                </div>
+                                <p class="small">Универсальный датчик открытия дверей и окон</p>
+                            </div>
+                        </div>
+    
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product2.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif">DoorProtect Plus</h5>
+                                    <h4 class="font-sans-serif">13440тг</h4>
+                                    
+                                </div>
+                                <p class="small"> Магнитный датчик открытия с сенсором удара, и функцией интелектуальной памяти в пространстве.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product5.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif"> GlassProtect</h5>
+                                    <h4 class="font-sans-serif">21100тг</h4>
+                                    
+                                </div>
+                                <p class="small">Cамый маленький в мире датчик разбития стекла.</p>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product6.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif">  MotionProtect Outdoor</h5>
+                                    <h4 class="font-sans-serif">52900тг</h4>
+                                    
+                                </div>
+                                <p class="small">Внешний датчик движения с двумя сенсорами.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- end .col -->
+                    <!-- My education -->
+                    <div class="col" >
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small"> улиц </div>
+                        <!-- Title -->
+                    
+    
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product3.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-blue font-sans-serif"> MotionProtect</h5>
+                                    <h4 class="font-sans-serif">15500тг</h4>
+                                   
+                                </div>
+                                <p class="small">
+                                    
+                                    Интеллектуальное распознание движения с иммунитетом к животным
+    
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="https://shop-cdn1.vigbo.tech/shops/151151/products/16501706/images/2-da000856d082ef5642fc7f16d7592f7f.jpg" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-magenta font-sans-serif">
+                                        MotionsProtect Plus
+                                       
+                                    </h5>
+                                    <h4 class="font-sans-serif">10600тг</h4>
+                                  
+                                </div>
+                                <p class="small">  Датчик движения с микроволновым сенсором, не реагирует на кондиционер и открытие форточки, с иммунитетом к животным
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date"><img src="./assets/img/block5/product3.png" width="100%" /></small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-magenta font-sans-serif">
+                                        CombiProtect
+                                       
+                                    </h5>
+                                    <h4 class="font-sans-serif">28300тг</h4>
+                                  
+                                </div>
+                                <p class="small">Интеллектуальное распознание движения, и добавлен детектор разбития стекла, с иммунитетом к животным<
+                                </p>
+                            </div>
+                        </div>
+
+
+    
+                    </div>
+                    <!-- end .col -->
+    
+                </div>
+                <!-- end .row -->
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #experience -->
+
+        
+        <!-- end .container -->
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <!-- WEAPONS -->
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <section id="my-weapons" class="py-5 py-md-8 bg-light">
+        <div class="container py-3">
+            <div class="row row-cols-1 row-cols-md-2 center-v">
+
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">От потопа</div>
+
+                    <h2 class="mb-4 overflow-hidden mb-5">
+                        LeaksProtect
+
+                    </h2>
+
+                    <p class="mb-6">Датчик раннего обнаружения затопления, в помещении. Предотвротите затопление заранее с продукцией Ajax</p>
+                    <div class="mt-4">
+                        <img src="https://img.icons8.com/ios/50/000000/wrench--v2.png" width="30" /><span>Устанавливается без инструментов</span>
+                    </div>
+
+
+                    <div class="mt-3">
+                        <img src="https://img.icons8.com/ios/50/000000/drop-of-blood.png" width="30" /><span>Оповещает о высыхании воды</span>
+                    </div>
+
+
+                    <div class="mt-3">
+                        <img src="https://img.icons8.com/dotty/80/000000/pay-wall.png" width="30"><span>Защищенный корпус</span>
+                    </div>
+
+
+                   
+                    <a href="#" class="btn btn-primary btn-arrow py-2 px-3 mb-4 mt-5">17600тг</a>
+                </div>
+
+                <div class="col">
+                    <img src="assets/img/block7/whitter.jpg" width="100%" />
+                </div>
+
+            </div>
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end #my-weapons -->
+
+    
+    <!-- end #footer -->
+</main>
+<section id="stay-connected">
+    <div class="container position-relative pb-1 overflow-hidden overflow-sm-visible">
+        <div class="row">
+
+            <div class="col-md-3 my-3">
+                <div class="d-none d-md-block px-5">
+                   <img src="assets/img/footer.png" / width="100%">
+                </div>
+            </div>
+
+            <div class="col-md-4 offset-md-1 center-both my-3">
+                <div class="text-center" data-tor-group=".fx => inview:reveal(up) delay(/+100ms/);">
+                    <h2 class="fx mb-5">График работы</h2>
+                   
+                    <p class="fx">
+                        Пн. С 9 до 18
+
+                        Вт. С 9 до 18
+
+                        Ср. С 9 до 18
+
+                        Чт. С 9 до 18
+
+                        Пт. С 9 до 18<br />
+
+                        Суббота и Воскресенье - выходные дни.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end .row -->
+
+        <div class="position-absolute bottom-0 z-index-n1 w-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1363 74.1" class="w-100 overflow-visible" data-tor-group="path => mouseX:@parallax(/+3/);">
+                <path d="M0 73.9s85-29 117-29 86 25 111 27 323 5 354-13 58.6-58 106-58c39.5 0 74 19.9 94 36 26.5 21.4 90 30 122 26s338.5 11 338.5 11H0z" fill="#f8e9de" />
+                <path d="M208.1 74.1s81.9-27.9 127.1-30 84.1 11.3 123.1 15.4 76.9-29.8 112.9-33.9 92.3 9.2 134.4 24.6c42.1 15.4 96.4 34.9 142.6 13.3C894.3 42.1 916.8 0 1003 0s105.7 10.3 137.5 27.7 60.5 27.7 88.2 16.4c27.7-11.3 35.9-14.4 60.5 0s30.8 29.8 30.8 29.8l-1111.9.2z" fill="#f79682" />
+                <path d="M283 73.9s77-28 121-30 82 11 120 15 75-29 110-33 90 9 131 24 94 34 139 13 67-62 151-62 103 10 134 27 59 27 86 16 35-14 59 0 29 30 29 30H283z" fill="#77acd7" />
+            </svg>
+        </div>
+
+    </div>
+    <!-- end .container -->
+</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Scripts -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Bootstrap `.js` file -->
+<script>
+ 
+function replaceone(Type) {
+    document.getElementById("div3").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div4").style.display = (Type) ? "none" : "block";
+};
+
+ 
+function replace(Type) {
+    document.getElementById("div5").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div6").style.display = (Type) ? "none" : "block";
+};
+
+ 
+function replacetwo(Type) {
+    document.getElementById("div7").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div8").style.display = (Type) ? "none" : "block";
+};
+
+
+ 
+function replacethree(Type) {
+    document.getElementById("div9").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div10").style.display = (Type) ? "none" : "block";
+};
+
+
+
+
+ 
+function replace_retronslator(Type) {
+    document.getElementById("div11").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div12").style.display = (Type) ? "none" : "block";
+};
+
+
+ 
+function replace_retronslator_two(Type) {
+    document.getElementById("div13").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div14").style.display = (Type) ? "none" : "block";
+};
+
+
+
+</script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+

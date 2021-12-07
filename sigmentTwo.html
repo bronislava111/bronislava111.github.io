@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <!-- Torus Kit `.css` file -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Torus Kit `.js` file -->
+  <script src="./assets/js/toruskit.min.js"></script>
+  
+
+  <title>Too Алматы Kyzet</title>
+
+</head>
+
+<body class="">
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Navigation -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="./">
+        Too Алматы Kyzet
+      </a>
+
+      <!-- Togglers -->
+      <div class="d-flex ms-auto order-lg-1">
+        <!-- Top navigation toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+
+        <!-- Offscreen navigation toggler -->
+        <button class="btn shadow-no position-relative center-both text-dark" id="off-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-tor="click:class.toggle(active, {target: body})">
+          <!-- <i class="bi bi-list h4 mb-0 z-index-1 center-both"></i> -->
+          <i class="bi bi-arrow-left-short position-absolute d-flex" data-tor="hover(#off-toggler):reveal(left) delay(100ms) quad"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-tor-group="path => hover(#off-toggler):scaleX.to(0) originX(0%) quad delay(/+100ms/);">
+            <path fill="currentColor" d="M2.5 4c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 8c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 12c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+          </svg>
+          <span class="circle circle-md position-absolute bg-opacity-10" data-tor="hover(#off-toggler):[bg(dark) scale.from(0)]"></span>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse small order-lg-0" id="topNavbar">
+        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark">
+          <li class="nav-item">
+              <a class="nav-link" href="tel: 8 (727) 328-95-96"> 8 (727) 328-95-96</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tel:8 (777) 632-40-35">8 (777) 632-40-35</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tel:+8 (777) 632-40-35">
+                  8 (777) 632-40-35
+
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Написать нам
+              <i class="bi bi-chat-dots-fill text-primary"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Offscreen backdrop -->
+  <div id="offscreen-backdrop" class="z-index-master w-h-100 fixed-top bg-black bg-opacity-50" data-tor="active(body):[fade.in @pointer-events(none;auto)] click:class.remove(active, {target: body})"></div>
+
+  <!-- Offscreen navigation -->
+  <nav id="offscreen-nav" class="overflow-auto position-fixed z-index-master end-0 bg-white shadow w-80 w-sm-auto p-5 pe-8 h-100" data-tor="active(body):pull.left(full)">
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-tor="click:class.remove(active, {target: body})" aria-label="Close"></button>
+    <ul class="nav flex-column links-dark nav-style-opacity nav-style-hover-primary" >
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.html#home">О нас</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.html#services">Стартовые комлекты</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="C:/Users/User/Desktop/maket1/ProKit/site/light.htmls#experienceone">Централи</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#skills">Ретрансляторы</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#experience">Управление</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="с">Охрана дома и улиц</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#block">Cирены</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#my-weapons">Против воды</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#block2">Против пожара</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#testimonials">Отзывы</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#work-process">Автоматизация</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#contact">Cвязаться с нами</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link transition-unset" href="#stay-connected">Stay connected</a>
+        </li>
+
+    </ul>
+  </nav>
+
+  <main id="main-content ">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <!-- EXPERIENCE -->
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+      <section id="experienceone" class="py-5 py-lg-8 overflow-hidden bg-light">
+        <center class=" mt-5">
+          <span class=" d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5"><h4 class=" font-sans-serif">Проводные системы  безопасности</h4></span>   </center>
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Центральные</div>
+                    <!-- Title -->
+                    
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div style="display:block"><img src="assets/img/block12/one.png"  width="100%" ></div>
+                             
+                               </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Датчик Patrol - 801</h5>
+                                <h4 class="font-sans-serif">
+                                    12240тг
+                                </h4>
+                                <small class="text-secondary">
+                                    
+                                   </small>
+                            </div>
+                            <p class="small">
+                                Цифровой совмещенный пассивный извещатель с акустическим датчиком разбития стекла.
+                                    Дальность обнаружения пир извещателя 15 м х 110°,
+                                    Дальность обнаружения датчика разбития стекла 12 м х 160°
+                               
+                            </p>
+                            
+                                
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div ><img src="assets/img/block12/two.png"  width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Клавиатура K14-LED</h5>
+                                <h4 class="font-sans-serif">
+                                    13200тг
+                                </h4>
+                               
+                            </div>
+                            <p class="small">
+                                Проводная клавиатура c динамиком для управления контрольными панелями серии Норд.
+                            </p>
+                        </div>
+                    </div><br><br>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div ><img src="assets/img/block12/three.png"  width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Скиф ИК 40</h5>
+                                <h4 class="font-sans-serif">
+                                    5040sтг
+                                </h4>
+                               
+                            </div>
+                            <p class="small">
+                                Обеспечивает устойчивость к перемещению домашних животных весом до 40 кг. 
+                                <ul>
+<li> Сферическая линза, обеспечивающая зону обнаружения без искажений и высокую собирающую способность</li>
+
+  </ul>
+  <input type="checkbox" id="pseudoBtn">
+ <div class="text">
+    <ul>
+    <li> Дискретная регулировка обнаружительной способности:</li> Режим 10 кг - максимальная дальность 10 м (кошки, декоративные собаки);
+  Режим 20 кг - максимальная дальность 9 м (кошки и небольшие собаки);Режим 40 кг - максимальная дальность 8 м (длинношерстные  собаки);
+    Режим 40 кг - максимальная дальность 7 м (любые собаки до 40 кг);
+    <li> Микропроцессорная обработка сигнала</li>
+      <li> Устойчив к засветке более 6500 лк</li>
+          <li> Установка на стене и в углу помещения</li>
+              <li> Рассчитан на подключение к источнику питания постоянного тока с выходным напряжением (8…30 В)</li>
+                  <li> Извещатель выдает тревожное извещение размыканием шлейфа сигнализации контактами исполнительного реле </li> </ul></p>
+ <label for="pseudoBtn" class=" btn btn-primary btn-arrow py-2 px-3 mb-4   w-40" > Подробнее</label></div> 
+</div>
+
+
+<div class="experience-box row mb-3 mt-3">
+    <div class="col-md-3 py-2 py-md-5">
+        <small class="d-inline-block date">
+          <div style="display:block"><img src="assets/img/block12/six.png"  width="100%" ></div>
+         
+           </small>
+    </div>
+    <div class="description col-md-9 border-start py-md-5">
+        <div class="mb-4">
+            <h5 class="text-primary font-sans-serif">Контакт магнитный Скиф СМК-М</h5>
+            <h4 class="font-sans-serif">
+                3480тг
+            </h4>
+            <small class="text-secondary">
+                
+               </small>
+        </div>
+        <p class="small">
+            Магнитоконтактный датчик накладной, корпус металлический, 50х30х25мм, магнит 45х8х8 мм   предназначен для монтажа на металлические конструкции.
+Расстояние при размыкании контактов, более  65 мм - при замыкании менее  30мм. Диапазон коммутируемых напряжений, В  0,1 - 100,0 . Диапазон коммутируемых токов, А  0,0001 - 0,1. Диапазон рабочих температур, °С  -50 - +50.
+В комплекте металлический гофрорукав, длиной 0,4 м.
+           
+        </p>
+        
+            
+    </div>
+</div>
+
+<br>
+
+<div class="experience-box row mb-3 mt-3">
+    <div class="col-md-3 py-2 py-md-5">
+        <small class="d-inline-block date">
+          <div style="display:block"><img src="assets/img/block12/13.png"  width="100%" ></div>
+         
+           </small>
+    </div>
+    <div class="description col-md-9 border-start py-md-5">
+        <div class="mb-4">
+            <h5 class="text-primary font-sans-serif">Сирена EGB 96 B</h5>
+            <h4 class="font-sans-serif">
+                2520тг
+            </h4>
+            <small class="text-secondary">
+                
+               </small>
+        </div>
+        <p class="small">
+            Оповещатель комбинированный EGВ-96В предназначен для выдачи светового и звукового сигналов на объектах, оснащенных охранной сигнализацией
+
+Напряжение питания постоянного тока, 12±1,2 В  
+Рабочее напряжение постоянного тока 6-15 В
+Потребляемый ток 280 мА 
+Уровень звукового давления не менее 94  дБ 
+Время непрерывной работы в режиме "тревога"  не ограничено  
+Габаритные размеры  122,2х73,8х43 мм 
+Имеет один вход на световой и звуковой оповещатель
+           
+        </p>
+        
+            
+    </div>
+    
+</div>
+
+
+
+<div class="experience-box row mb-3 mt-3">
+    <div class="col-md-3 py-2 py-md-5">
+        <br>
+    <br>
+        <small class="d-inline-block date">
+          <div style="display:block"><img src="assets/img/block12/eleven.png"  width="100%" ></div>
+         
+           </small>
+    </div>
+    <div class="description col-md-9 border-start py-md-5">
+        <br>
+    <br>
+        <div class="mb-4">
+            <h5 class="text-primary font-sans-serif">Контакт магнитный Скиф СМК-П</h5>
+            <h4 class="font-sans-serif">
+                1920тг
+            </h4>
+            <small class="text-secondary">
+                
+               </small>
+        </div>
+        <p class="small">
+            Извещатель охранный точечный магнитоконтактный СКИФ СМК-П (далее извещатель) предназначен для блокировки гаражных ворот, ангаров, железнодорожных контейнеров, телефонных шкафов и других конструктивных магнитопроводящих (металлических) и магнитонепроводящих (алюминиевых, деревянных и т. д.) элементов зданий и сооружений на открывание или смещение с выдачей в шлейф приемно-контрольного прибора извещения о тревоге путем размыкания контактов геркона. Извещатель может использоваться вместо концевых механических выключателей
+            Расстояние при восстановлении- 30 мм, расстояние при тревоге- 65 мм.
+            В комплекте пластиковый гофрорукав, длиной 0,5
+             м.
+           
+        </p>
+        
+            
+    </div>
+</div>
+
+<div class="experience-box row mb-3 mt-3">
+    <div class="col-md-3 py-2 py-md-5">
+        <small class="d-inline-block date">
+          <div style="display:block"><img src="assets/img/block12/12.png"  width="100%" ></div>
+         
+           </small>
+    </div>
+    <div class="description col-md-9 border-start py-md-5">
+        <div class="mb-4">
+            <h5 class="text-primary font-sans-serif">Кнопка с фиксацией СКИФ 01</h5>
+            <h4 class="font-sans-serif">
+                2520тг
+            </h4>
+            <small class="text-secondary">
+                
+               </small>
+        </div>
+        <p class="small">
+            Кнопка с фиксацией.Перекидной контакт (НЗ, НР). Корпус  пластмассовый.
+            Коммутируемый ток- до 0,3А. Номинальное напряжение питания - 12  /24VDC.
+            Количество механических циклов переключения - 1000000. Рабочая температура - от -30оС до +50оС. Размеры - 55х55х27мм.
+           
+        </p>
+        
+            
+    </div>
+</div>
+
+  
+                    </div>
+
+                </div>
+                <!-- end .col -->
+                <!-- My education -->
+                <div class="col">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">панели</div>
+                    <!-- Title -->
+             
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div style="display:block"><img src="assets/img/block12/eight.png"  width="100%" ></div>
+                             
+                               </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Аккумулятор,SF,12V-7A</h5>
+                                <h4 class="font-sans-serif">
+                                    7720тг
+                                </h4>
+                                <small class="text-secondary">
+                                    
+                                   </small>
+                            </div>
+                            <p class="small">
+                                Напряжение 12В, емкость 7Ач, срок службы до 2 лет. Разработана для резервного электропитания охранно-пожарных систем и приборостроения. Габариты, мм (Д/Ш/В) 152/65/94
+                               
+                            </p>
+                            
+                                
+                        </div>
+                    </div>
+
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div style="display:block"><img src="assets/img/block12/nine.png"  width="100%" ></div>
+                             
+                               </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Блок питания Квант -30</h5>
+                                <h4 class="font-sans-serif">
+                                    16320тг
+                                </h4>
+                                <small class="text-secondary">
+                                    
+                                   </small>
+                            </div>
+                            <p class="small">
+                                Источник бесперебойного питания, импульсный. Uвх=~220V AC, Uвых=13,4V DC, Iн=3А, под аккум. 7 А·ч, защита АКБ от глубокого разряда, защита от КЗ, защита от перегрева, защита от переполюсовки, 235x165x80 мм
+                               
+                            </p>
+                            
+                                
+                        </div>
+                    </div>
+
+
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><div ><img src="assets/img/block12/four.png"  width="100%" ></div>
+                                </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Извещатель охр.объемн.опто-электронный Пирон - 4Д</h5>
+                                <h4 class="font-sans-serif">112700тг</h4>
+                               
+                            </div>
+                            <p class="small">
+                                Извещатель охранный объемный оптико-электронный.
+                                Основные особенности:
+                                
+
+                                «Пирон-4Д» – объемная зона обнаружения с устойчивостью к перемещению домашних животных массой до 20 кг
+                                Технические характеристики:
+                                <div class="block">
+                                    Максимальная дальность обнаружения	 10 м
+                                    Высота установки	2,3 м
+                                    Напряжение питания	8…30 В
+                                    Потребляемый ток	12 мА
+                                    Температурный диапазон	-30 … +50° С
+                                    Степень защиты, обеспечиваемая оболочкой	IP41
+                                    Габаритные размеры	90х60х50 мм
+                                </div>
+                                      
+                                <div class="k btn btn-primary btn-arrow py-2 px-3 mb-4   w-40" >Подробнее</div>
+                          
+                              
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><div><img src="assets/img/block12/five.png"  width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Астра - 531, АК датчик разбития</h5>
+                                <h4 class="font-sans-serif">4200тг</h4>
+                               
+                            </div>
+                            <p class="small">
+                                Извещатель предназначен для:
+                                - обнаружения разрушения стекол остекленных конструкций закрытых помещений и формирования извещения о тревоге путем размыкания выходных контактов сигнального реле.
+                                
+                                Типы стекол:
+                                <div class="block2">- обычные и защищенные полимерной пленкой толщиной от 2.5 до 8 мм
+                                    - армированные толщиной 5.5 и 6 мм
+                                    - узорчатые толщиной от 4 до 7 мм
+                                    - многослойные строительные толщиной от 6 до 8 мм
+                                    
+                                    Технические параметры АК канала
+                                    Максимальная рабочая дальность действия в секторе объемного угла из центра микрофона120 град, 6 м
+                                    Рабочие частоты:
+                                    Первая 6000+/-100 Гц
+                                    Вторая 150+/-10 Гц
+                                    Чувствительность:
+                                    На первой рабочей частоте 80+/-1 Дб
+                                    На второй рабочей частоте 83.5+/-0.5 Дб
+                                    
+                                    Общие технические параметры
+                                    Напряжение питания от 8 до 15 В
+                                    Ток потребления в дежурном режиме и в режиме «Тревога» не более, 18 мА
+                                    Время технической готовности не более, 60 с
+                                    Допустимый ток через контакты реле не более, 0.08 А
+                                    Допустимое напряжение на контактах реле не более, 100 В
+                                    Сопротивление цепи, включаемой в шлейф сигнализации, в дежурном состоянии не более, 8 Ом
+                                    Допустимый ток через цепь ТМР не более, 0.05 А
+                                    Допустимое напряжение через цепь ТМР не более, 72 В
+                                    Габаритные размеры 62х37х29
+                                    Масса извещателя 0.03 кг
+                                    
+                                    Условия эксплуатации 
+                                    Диапазон температур от -20 до +50 град
+                                    Относительная влажность воздуха до 95% при +35 град без конденсации влаги.
+                             </div>
+                                <div class="k2 btn btn-primary btn-arrow py-2 px-3 mb-4   w-40" >Подробнее</div>
+                                   </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="experience-box row mb-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date"><div><img src="assets/img/block12/seven.png"  width="100%" ></div>
+                              </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Датчик PATROL-501</h5>
+                                <h4 class="font-sans-serif">4200тг</h4>
+                               
+                            </div>
+                            <p class="small">
+                                «Patrol-501» - датчик разбития стекла – предназначен для регистрации акустических (звуковых) колебаний, возникающих при разрушении стекла. 
+                                Алгоритм работы датчика основан на принципе двухканального обнаружения последовательности сигналов разрушения стекла. Извещение о тревоге формируется путем размыкания контактов реле и световой индикацией.
+                              
+                                <div class="block3">  
+                                    Технические характеристики
+                                    Напряжение питания: 9 – 16 В
+                                    Ток потребления в дежурном режиме: 17.8 мА
+                                    В режиме «Тревога» 18.7 мА
+                                    Время выдачи сигнала «Тревога» 3 сек
+                                    Время «готовности» датчика 2 сек
+                                    Дальность обнаружения 12 м х 170 град
+                                    Выход реле: НЗ; 60В; 120 мА; 16 Ом
+                                    Тампер: НЗ; 10 Ом
+                                    Тип микрофона: электретный всенаправленный
+                                    Диапазон рабочих температур от – 30 до + 80 град
+                                    Диапазон температур хранения от – 50 до + 80 град
+                                    Защита от RFI-помех: 30 В/м в диапазоне от 10 до 1000 МГц
+                                    Защита от EMI помех: 50 000 В
+                                    Габаритные размеры: 87х52х24 мм
+                                    Вес 54 гр.  </div>
+                                <div class="k3 btn btn-primary btn-arrow py-2 px-3 mb-4   w-40" >Подробнее</div>
+                                   </p>
+                        </div>
+                    </div>
+
+
+                    <div class="experience-box row mb-3 mt-3">
+                        <div class="col-md-3 py-2 py-md-5">
+                            <small class="d-inline-block date">
+                              <div style="display:block"><img src="assets/img/block12/ten.png"  width="100%" ></div>
+                             
+                               </small>
+                        </div>
+                        <div class="description col-md-9 border-start py-md-5">
+                            <div class="mb-4">
+                                <h5 class="text-primary font-sans-serif">Контакт магнитный Скиф СМК-П 1</h5>
+                                <h4 class="font-sans-serif">
+                                  1920тг
+                                </h4>
+                                <small class="text-secondary">
+                                    
+                                   </small>
+                            </div>
+                            <p class="small">
+                                Извещатель охранный точечный магнитоконтактный СКИФ СМК-П 1(далее извещатель) предназначен для блокировки гаражных ворот, ангаров, железнодорожных контейнеров, телефонных шкафов и других конструктивных магнитопроводящих (металлических) и магнитонепроводящих (алюминиевых, деревянных и т. д.) элементов зданий и сооружений на открывание или смещение с выдачей в шлейф приемно-контрольного прибора извещения о тревоге путем размыкания контактов геркона. Извещатель может использоваться вместо концевых механических выключателей
+                                Расстояние при восстановлении- 30 мм, расстояние при тревоге- 65 мм.
+                                Идет с пластиковой гофрой в комплекте.
+                               
+                            </p>
+                            
+                                
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end .col -->
+
+            </div>
+            <!-- end .row -->
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end #experience -->
+    
+
+    
+    <!-- end #footer -->
+</main><br>
+<br><br>
+<section id="stay-connected mt-5">
+    <div class="container position-relative pb-1 overflow-hidden overflow-sm-visible mt-5">
+        <div class="row mt-5">
+
+            <div class="col-md-3 my-3">
+                <div class="d-none d-md-block px-5">
+                   <img src="assets/img/footer.png" width="100%">
+                </div>
+            </div>
+
+            <div class="col-md-4 offset-md-1 center-both my-3">
+                <div class="text-center" data-tor-group=".fx => inview:reveal(up) delay(/+100ms/);">
+                    <h2 class="fx mb-5">График работы</h2>
+                   
+                    <p class="fx">
+                        Пн. С 9 до 18
+
+                        Вт. С 9 до 18
+
+                        Ср. С 9 до 18
+
+                        Чт. С 9 до 18
+
+                        Пт. С 9 до 18<br />
+
+                        Суббота и Воскресенье - выходные дни.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end .row -->
+
+        <div class="position-absolute bottom-0 z-index-n1 w-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1363 74.1" class="w-100 overflow-visible" data-tor-group="path => mouseX:@parallax(/+3/);">
+                <path d="M0 73.9s85-29 117-29 86 25 111 27 323 5 354-13 58.6-58 106-58c39.5 0 74 19.9 94 36 26.5 21.4 90 30 122 26s338.5 11 338.5 11H0z" fill="#f8e9de" />
+                <path d="M208.1 74.1s81.9-27.9 127.1-30 84.1 11.3 123.1 15.4 76.9-29.8 112.9-33.9 92.3 9.2 134.4 24.6c42.1 15.4 96.4 34.9 142.6 13.3C894.3 42.1 916.8 0 1003 0s105.7 10.3 137.5 27.7 60.5 27.7 88.2 16.4c27.7-11.3 35.9-14.4 60.5 0s30.8 29.8 30.8 29.8l-1111.9.2z" fill="#f79682" />
+                <path d="M283 73.9s77-28 121-30 82 11 120 15 75-29 110-33 90 9 131 24 94 34 139 13 67-62 151-62 103 10 134 27 59 27 86 16 35-14 59 0 29 30 29 30H283z" fill="#77acd7" />
+            </svg>
+        </div>
+
+    </div>
+    <!-- end .container -->
+</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Scripts -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Bootstrap `.js` file -->
+<script>
+ 
+function replaceone(Type) {
+    document.getElementById("div3").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div4").style.display = (Type) ? "none" : "block";
+};
+
+ 
+function replace(Type) {
+    document.getElementById("div5").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div6").style.display = (Type) ? "none" : "block";
+};
+
+ 
+function replacetwo(Type) {
+    document.getElementById("div7").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div8").style.display = (Type) ? "none" : "block";
+};
+
+
+ 
+function replacethree(Type) {
+    document.getElementById("div9").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div10").style.display = (Type) ? "none" : "block";
+};
+
+
+
+
+ 
+function replace_retronslator(Type) {
+    document.getElementById("div11").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div12").style.display = (Type) ? "none" : "block";
+};
+
+
+ 
+function replace_retronslator_two(Type) {
+    document.getElementById("div13").style.display = (Type) ? "block" : 'none';
+    document.getElementById("div14").style.display = (Type) ? "none" : "block";
+};
+
+var btn = document.querySelector('.k');
+btn.onclick = function(e) {
+	var element = document.querySelector(".block");
+  if(element.classList.contains("show-block")) {
+  	element.classList.remove("show-block");
+  } else {
+  	element.classList.add("show-block");
+  }
+}
+
+
+var btn = document.querySelector('.k2');
+btn.onclick = function(e) {
+	var element = document.querySelector(".block2");
+  if(element.classList.contains("show-block")) {
+  	element.classList.remove("show-block");
+  } else {
+  	element.classList.add("show-block");
+  }
+}
+
+
+var btn = document.querySelector('.k3');
+btn.onclick = function(e) {
+	var element = document.querySelector(".block3");
+  if(element.classList.contains("show-block")) {
+  	element.classList.remove("show-block");
+  } else {
+  	element.classList.add("show-block");
+  }
+}
+
+</script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
