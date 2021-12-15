@@ -73,7 +73,7 @@
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Написать нам
+            <a class="nav-link"  id="myBtn">Отправить заявку
               <i class="bi bi-chat-dots-fill text-primary"></i>
             </a>
           </li>
@@ -82,6 +82,61 @@
 
     </div>
   </nav>
+
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+    <form class="w-md-80 form-clean inputs-transparent container" data-tor-group=".form-control => !focus:[border(dark) bg(light)];">
+        <div class="mb-2">
+            <label for="contact-name" class="form-label opacity-70">ФИО</label>
+            <input type="text" class="form-control p-3 border-bottom" id="contact-name" aria-describedby="contact-name">
+        </div>
+        <div class="mb-2">
+            <label for="contact-email" class="form-label opacity-70">Email</label>
+            <input type="email" class="form-control p-3 border-bottom" id="contact-email" aria-describedby="contact-email">
+        </div>
+        
+      
+        <div class="mb-2">
+            
+<select class="custom-select form-control p-3 border-bottom">
+    
+    <option selected>Выберите товар</option>
+    <option value="1"><h3>Безпроводные системы безопасности</h3></option>
+    <option value="2">Hub 2 Plus</option>
+    <option value="3">Hub 2</option>
+    <option value="1">Hub Plus</option>
+    <option value="2">Hub</option>
+    <option value="3">ReX</option>
+    <option value="1">ReX-2</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select></div>
+  <button type="submit" class="btn btn-primary btn-arrow py-2 px-3 float-md-end w-100 w-md-auto mt-5">Отправить</button>
+                     
+      </Form>
+    </div>
+  
+  </div>
+  
   <!-- Offscreen backdrop -->
   <div id="offscreen-backdrop" class="z-index-master w-h-100 fixed-top bg-black bg-opacity-50" data-tor="active(body):[fade.in @pointer-events(none;auto)] click:class.remove(active, {target: body})"></div>
 
@@ -160,17 +215,21 @@
                   <!-- left -->
                   <div class="col my-3">
                       <!-- Badge -->
-                      <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5">О компании</div>
+                      <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5">       Too Алматы Kyzet</div>
                       <!-- Title -->
                       <h1 class="mb-5">
-                          <span data-tor="inview:reveal(up) bounce slow">Профессиональная</span>
-                          <br>
-                          <span data-tor="inview:reveal(up) bounce slow delay(.5s)">система</span>
-                          <span data-tor="inview:reveal(up) bounce slow delay(.6s)" class="text-primary">безопасности</span>
-                      </h1>
+                        <span data-tor="inview:reveal(up) bounce slow">Мы </span>
+                      
+                        <span data-tor="inview:reveal(up) bounce slow delay(.5s)">на страже</span>
+                        <span data-tor="inview:reveal(up) bounce slow delay(.6s)" class="text-primary">вашей безопасности</span>
+                    </h1>
+                      <h4 class="h3 font-sans-serif fw-normal  text-darken-xl mb-3">Профессиональная система безопасности  </h4>
                       <!-- Subtitle -->
-                      <h2 class="h3 font-sans-serif fw-normal text-secondary text-darken-xl mb-3">в любое время дня и ночи</h2>
-                      <!-- Description -->
+                      <h5 class=" font-sans-serif fw-normal  text-darken-xl mb-3">в любое время дня и ночи</h5>
+                     
+                       <!-- Badge -->
+                       <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5">О компании</div>
+                       <!-- Description -->
                       <p class="text-body w-80 mb-6">
                           Мы на страже Вашей Безопасности. Наблюдения и реагирование экипажа за объектами - 24/7/360. Прибытие вооружённого подразделения до 10-ти минут в черте города.
                       </p>
@@ -181,7 +240,7 @@
                   <!-- end .col -->
                   <!-- Right Illustration -->
                   <div class="col">
-                      <img src="assets/img/apartment_1x-removebg-preview.png"  width="100%"/>
+                      <img src="assets/img/logo .png"  width="100%"/>
                   </div>
                   <!-- end .col -->
 
@@ -191,100 +250,7 @@
           <!-- .container -->
       </section>
 
-      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-      <!-- SERVICES -->
-      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-      <section id="services" class="py-5 py-lg-8 bg-light">
-          <div class="container py-4">
-              <!-- Title -->
-              <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Cтартовые комплекты</div>
-
-              <div class="row row-cols-1 row-cols-md-2 mt-5 center-v">
-                  <!-- Illustration -->
-                  <div class="col my-3 ">
-                      <div class="pe-6  mt-50">
-                          <center> <img src="https://images.ua.prom.st/1895285056_komplekt-besprovodnoj-gsm.jpg" width="100%" /></center>
-                      </div>
-                  </div>
-                  <!-- end .col -->
-                  <!-- Description -->
-                  <div class="col">
-
-                      <h2 class="mb-4 overflow-hidden mb-5">
-                          Cтартовые комплекты
-                          <span class="text-primary">
-
-                              <span class="text-nowrap"><span class="fx">a</span><span class="fx">j</span><span class="fx">a</span><span class="fx">x</span></span>
-
-                              <span class="text-body text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
-                          </span>
-                      </h2>
-
-                      <p class="mb-6">Стартовые комплекты,  мы собрали все товары в одно целое.Для вашего удобства в использовании </p>
-                      <div class="row row-cols-1 row-cols-md-2" data-tor-group=".circle => inview:[scale.from(0) rotate.from(20deg)] delay(/+50ms/) slow; h3 => inview:[pull.left(sm) fade.in] slow delay(/+50ms/);">
-
-                          <div class="col mb-5 border" data-tor-parent="hover">
-                              <img src="assets/img/block2/workpanelone.png" width="70%">
-
-                              <h4 class="font600">StarterKit (HubKit)</h4>
-                              <p class="font600">
-                                  Стартовый комплект Ajax: Интеллектуальная централь, Датчик движения, Датчик открытия, брелок. Имеется в двух цветах(белый)(черный)
-                              </p>
-                              <p class="right font600">88670 <img src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right.png" /></p>
-                          </div>
-
-                    
-
-                          <div class="col mb-5 " data-tor-parent="hover">
-                              <img  src="assets/img/block2/workpaneltwo.png" width="100%">
-                              <div class="mt-3"></div>
-
-                              <h4 class="font600">StarterKit (HubKit) Plus</h4>
-                              <p class="font600">
-                                  Стартовый комплект Ajax: Интеллектуальная централь Хаб Плюс, Датчик движения, Датчик открытия, брелок.Имеется в двух цветах(белый)(черный)
-                              </p>
-                              <p class="right font600 ">142300 <img src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right.png" /></p>
-                          </div>
-
-                   
-                          <div class="col mb-5 " data-tor-parent="hover">
-                              <img  src="assets/img/block2/block.png" width="100%">
-                              <div class="mt-1"></div>
-
-                              <h4 class="font600">StarterKit Cam (HubKit Cam)</h4>
-                              <p class="font600">
-                                  Стартовый комплект системы безопасности с фотоверификацией тревог.
-                                  Состав комплекта - Интеллектуальная централь, Датчик движения с фотокамерой, Датчик открытия.
-                              </p>
-                              <p class="right font600 ">155800 <img src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right.png" /></p>
-
-                          </div>
-
-                          <div class="col mb-5 border" data-tor-parent="hover">
-                              <center><img src="assets/img/block2/workpanelthree.png" width="100%"></center>
-
-
-                              <h4 class="font600">StarterKit Cam Plus (HubKit Cam Plus)</h4>
-                              <p class="font600">
-                                  Стартовый комплект системы безопасности с фотоверификацией тревог.
-                                  Состав комплекта - Интеллектуальная централь, Датчик движения с фотокамерой, Датчик открытия.
-                              </p>
-                              <p class="right font600 ">210300 <img src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-right.png" /></p>
-
-                          </div>
-
-                      </div>
-                  </div>
-                  <!-- end .col -->
-
-              </div>
-              <!-- end .row -->
-          </div>
-          <!-- end .container -->
-      </section>
-      <!-- end #services -->
-      
+    
       <section id="portfolio" class="py-5 py-lg-8">
           <div class="container py-4">
               <!-- Title -->
@@ -433,6 +399,32 @@
                                   <!-- end .container -->
 </section>
       <!-- end #portfolio -->
+      
+      <Section  class="galeru container mt-5"><div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small"><h3 class="text-primary">Фотогалерея продукции AJAXs</h3>
+        </div>
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="assets/img/KeyPad Plus Phone.png" alt="Gallery image 1" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="assets/img/Pass Split.png" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="assets/img/Hub 5.JPG" alt="Gallery image 3" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="assets/img/Relay Lock.png" alt="Gallery image 4" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="assets/img/05_Museum_W.jpg" alt="Gallery image 5" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="assets/img/DCO 2.png" alt="Gallery image 6" class="gallery__img">
+            </figure>
+        </div>
+    </Section>
+      
+
 
        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
       <!-- WEAPONS -->
@@ -486,9 +478,12 @@
 
     <section id="skills" class="py-5 mt-3 py-lg-8">
         <div class="container">
-            <!-- Badge -->
             <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Каталог</div>
 
+            <center>
+                <button class="btn btn-outline-secondary py-2 px-3 mb-4" > Availale in<br>App store</button>   <button class="btn btn-outline-secondary  py-2 px-3 mb-4">Availale in<br>Google Play</button><br><img src="assets/img/2020-04-17_12.54.35-removebg-preview.png" width="350px"></center>
+            <!-- Badge -->
+            
             <div class="row row-cols-1 row-cols-md-2 mt-md-5 center-v">
                 <!-- - - - - - - - -  -->
                 <!-- Description -->
@@ -501,7 +496,7 @@
                     
                     <center>
                         <h3 class="font600 mt-5">Безпроводные системы  безопасности</h3>
-                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Круглосуточная охрана любых помещений. Установим оборудование, подключим к пульту охраны. При тревоге экипаж охраны прибудет за 5 минут. Звоните сейчас! </p></div>
+                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Круглосуточная охрана любых помещений. Установим оборудование, подключим к пульту охраны. При тревоге экипаж охраны прибудет за 10 минут. Звоните сейчас! </p></div>
                        
                       
                     </center>
@@ -524,7 +519,7 @@
                     
                     <center>
                         <h3 class="font600 mt-5">Проводные системы безопасности</h3>
-                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Круглосуточная охрана любых помещений. Установим оборудование, подключим к пульту охраны. При тревоге экипаж охраны прибудет за 5 минут. Звоните сейчас! </p></div>
+                        <div class="mt-3 font600 "><p><span сlass="border"><img src="https://img.icons8.com/ios/50/000000/security-checked.png" width="35" /></span>&emsp;Круглосуточная охрана любых помещений. Установим оборудование, подключим к пульту охраны. При тревоге экипаж охраны прибудет за 10 минут. Звоните сейчас! </p></div>
                        
 
                     </center>
@@ -547,7 +542,7 @@
       <section id="experienceone" class="py-5 py-lg-8 overflow-hidden bg-light">
       
           <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small"><h3 class="text-primary">Без проводная система
-            RAPTOR</h3>
+            безопасности</h3>
             </div>
         <div class="container py-4">
             <div class="row row-cols-1 row-cols-md-2"  data-tor-group=".fx => inview:[pull.up(md) fade.in] delay(/+100ms/) slow;">
@@ -793,7 +788,7 @@
 
       <section id="experienceone" class="py-5 py-lg-8 overflow-hidden bg-light">
       
-        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small"><h3 class="text-primary"> Проводная система
+        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small"><h3 class="text-primary"> Проводная система безопасности
           </h3>
           </div>
       <div class="container py-4">
@@ -1074,6 +1069,7 @@
 
   <!-- Bootstrap `.js` file -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
